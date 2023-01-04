@@ -120,8 +120,7 @@ export class StripeService {
   }
 
   public async handleWebhook(payload: Buffer, signature: string) {
-    const endpointSecret =
-      'whsec_33ab01500392adf77f8e9c10643ffb11af3b23569d273ec0a6e413d981db42ec';
+    const endpointSecret = '';
     let event: Stripe.Event;
     // Only verify the event if you have an endpoint secret defined.
     // Otherwise use the basic event deserialized with JSON.parse
